@@ -1,16 +1,17 @@
 version: '3.9'
 services:
-  mysql-db:
+  mysql:
     image: mysql:latest
     ports: 
-      - "3306:3306"
+      - "3406:3406"
     container_name: my-mysql
     restart: always
     environment:
-       - MYSQL_ROOT_PASSWORD:mysql
-       - MYSQL_USER=root
-       - MYSQL_PASSWORD:mysql
+       - MYSQL_ROOT_PASSWORD=mysql
+       - MYSQL_PASSWORD=mysql
        - MYSQL_DATABASE=dbmysql
+       - MYSQL_ALLOW_EMPTY_PASSWORD=mysql
+       - MYSQL_RANDOM_ROOT_PASSWORD=mysql
 
   web:
     build: .
