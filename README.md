@@ -5,3 +5,4 @@
 3 - Abrir o terminal do Visual Code 
 4 - Comando no terminal do visual code - docker-compose up
 5 - 
+a
