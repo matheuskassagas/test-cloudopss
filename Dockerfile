@@ -14,6 +14,7 @@ RUN pip install -r requirements.txt
 # RUN pip intall virtualenv flask
 # RUN pip install FlaskAPI
 # RUN pip install waitress
+# RUN pip install waitress
 
 
 COPY . .
